@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 4400px;
+}
+
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;  
+}
+
+.header {
+    height: 44px;
+    margin-top: 10px;
+}
+
+.nav {
+    float: left;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 44px;
+    padding: 0 10px;
+    /* background-color: green; */
+    line-height: 44px;
+    font-size: 14px;
+    color: #515151;
+}
+
+.nav ul li a:hover{
+    color: #5177fc;
+}
+
+.help {
+    float: right;
+    height: 34px;
+    /* margin-top: 10px; */
+    line-height: 44px;
+}
+
+.help img {
+    margin-left: 5px;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.help a,
+.help p{
+    color: #515151;
+    font-size: 14px;
+}
+
+.help a:hover {
+    color: #5177fc;
+}
+
+.help p {
+    float: left;
+    padding: 0 5px;
+}
+
+.help .quality{
+    margin: auto auto;
+    /* float: left; */
+    /* padding: 1px 10px 0px 10px; */
+    /* border-radius: 50%; */
+    background-color: #40c057;
+    color: #ffffff;
+}
+
+
+.help .avtar {
+    height: 34px;
+    width: 34px;
+    border: 1px solid blue;
+    border-radius: 35px;
+    margin-right: 5px;
+}
+
+.logo {
+    height: 77px;
+    width: 228px;
+    background-color: aqua  ;
+    margin: 35px auto;
+}
+
+.search {
+    height: 49px;
+    width: 656px;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+
+.search input{
+    float: left;
+    height: 45px;
+    width: 533px;
+    padding-left: 10px;
+    /* background-color: red; */
+    border: 2px solid #c4c7ce;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.search input:focus {
+    border: 2px solid #4e6ef2;
+    border-right: none;
+    outline: none;
+}
+
+.search a {
+    float: left;
+    height: 45px;
+    width: 109px;
+    border: 2px solid #4e6ef2;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #4e6ef2;
+    line-height: 45px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.search a:hover {
+    background-color: #4662d9;
+    color: #f6f7fd;
+}
+
+.bd {
+    margin-top: 100px;
+}
+
+.news {
+    float: left;
+    width: 572px;
+    padding-left: 10px;
+}
+
+.subnav {
+    height: 39px;
+}
+
+.subnav ul {
+    margin-top: 10px;
+}
+
+.subnav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.subnav ul li a {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #b5b8c1;
+}
+
+.subnav ul li a:hover {
+    color: #222222;
+    border-bottom: 2px solid #4e71f2;
+}
+
+.news h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.news h1 a:hover {
+    color: #315efb;
+}
+
+.news .news-pic {
+    width: 567px;
+    margin-top: 15px;
+}
+
+.news .news-pic img {
+    width: 100%;
+}
+
+.origin {
+    margin-top: 10px;
+    width: 567px;
+    color: #80838f;
+}
+
+.origin .author {
+    float: left;
+}
+
+.origin .author p {
+    float: left;
+    margin-right: 12px;
+}
+
+.origin .bobao {
+    float: right;
+}
+
+.hot {
+    float: right;
+    /* height: 250px; */
+    width: 377px;
+}
+
+.hot .baiduhot{
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.hot .baiduhot:hover {
+    color: #3d67fb;
+}
+
+.hot .change {
+    float: right;
+    color: #626675;
+}
+
+.hot .change:hover {
+    color: #315efb;
+}
+
+.hot ul li {
+    margin: 18px 0 18px 0;
+}
+
+.hotnews .title {
+    float: left;
+}
+
+.hotnews .title .order{
+    display: inline-block;
+}
+
+.hotnews .title:hover {
+    color: #315efb;
+    text-decoration: underline;
+}
+
+.hotnews .number {
+    float: right;
+    color: #9195a3;
+}
+
+.hotnews .title .order {
+    margin-right: 10px;
+}
+
+li:nth-child(1) .order {
+    color: #fe2d46;
+}
+
+li:nth-child(2) .order {
+    color: #ff771c;
+}
+
+li:nth-child(3) .order {
+    color: #faae1c;
+}
+
+li:nth-child(n+4) .order {
+    color: #9da1ad;
+}
+
+.footer {
+    color: #c1d4ed;
+    font-size: 14px;
+}

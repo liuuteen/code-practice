@@ -1,0 +1,7 @@
+/* em 是当前元素（font-size）一个文字的大小 */
+
+p {
+    font-size: 16px;
+    /* text-indent 首行缩进， 2em = 32px 两个文字 */
+    text-indent: 2em; 
+}

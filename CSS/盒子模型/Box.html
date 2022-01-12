@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        .first {
+            border-color: palegreen;
+            border-width: 10px;
+            border-style: solid;
+            font-size: 14px;
+            line-height: 100px;
+            background-color: salmon;
+        }
+        .second {
+            border: 10px solid pink;
+            background-color: purple;
+        }
+        .innerBox{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border: 10px solid yellow;
+        }
+        .inner2Box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border: 10px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="innerBox">innerBox</div>
+    </div>
+    <div class="second">
+        <div class="inner2Box">innder2Box</div>
+    </div>
+</body>
+</html>
