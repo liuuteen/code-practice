@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .pra1 {
+            float: left;
+            margin-left: 50px;
+        }
+
+        .box1 li {
+            float: left;
+            list-style: none;
+            width: 60px;
+            height: 80px;
+            border: 1px solid red;
+        }
+
+        .box2 li {
+            float: left;
+            list-style: none;
+            width: 60px;
+            height: 80px;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        .box3 li {
+            float: left;
+            list-style: none;
+            width: 60px;
+            height: 80px;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        .box3 .active {
+            border-color: blue;
+        }
+
+        .box4 li {
+            float: left;
+            list-style: none;
+            width: 60px;
+            height: 80px;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        .box4 .active {
+            position: relative;
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="pra1">
+            <h3>1. 正常边框叠加变粗</h3>
+            <ul class="box1">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="pra1">
+            <h3>2. margin-left 负值实现细边框(依次渲染，所以先float挨着再移动)</h3>
+            <ul class="box2">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="pra1">
+            <h3>3. hover时边框被压住无法显示</h3>
+            <ul class="box3">
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="pra1">
+            <h3>4.提高元素的层级</h3>
+            <ul class="box4">
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
