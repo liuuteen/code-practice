@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            margin: 20px 0 0 20px;
+        }
+        ul li {
+            float: left;
+            margin: 20px 20px;
+            list-style: none;
+        }
+        .box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transition: .6s;
+            transform: perspective(1000px);
+        }
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+        .box .bottom img {
+            width: 100%;
+            height: 100%;
+        }
+        .front,
+        .bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+        }
+        .front > p {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-left: 2px;
+        }
+        .front {
+            /* background-color: brown; */
+            transform: translateZ(100px);
+        }
+        .bottom {
+            background-color: violet;
+            transform: translateY(100px) rotateX(-90deg);
+        }
+        .joker_queen {
+            background-color: #f5080d;
+        }
+        .red_style {
+            background-color: #751e00;
+        }
+        .folklore {
+            background-color: #707070;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front joker_queen">
+                    <p>The Joker And The Queen (feat. Taylor Swift)</p>
+                </div>
+                <div class="bottom">
+                    <img src="./images/the joker and the queen.jpg">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front red_style">
+                    <p>Red (Taylor's Version)</p>
+                </div>
+                <div class="bottom">
+                    <img src="./images/red.jpg">
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front folklore">
+                    <p>folklore (deluxe version)</p>
+                </div>
+                <div class="bottom">
+                    <img src="./images/folklore.jpg">
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
